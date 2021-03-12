@@ -74,7 +74,7 @@ class TicTacToe
       position_2 = @board[win_index_2]
       position_3 = @board[win_index_3]
    
-      if position_1 == position_2 && position_2 == position_3 && position_taken?(single_win)
+      if position_1 == position_2 && position_2 == position_3 && position_taken?(turn)
         single_win
       end
     end
