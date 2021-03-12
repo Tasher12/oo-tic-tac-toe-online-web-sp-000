@@ -108,7 +108,7 @@ class TicTacToe
 
   def winner
     if won?
-      return current_player[0]
+      return current_player[]
     end
   end
 
