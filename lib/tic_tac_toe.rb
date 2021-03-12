@@ -65,20 +65,22 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.each do |single_win|
-      win_index_1 = single_win[0]
-      win_index_2 = single_win[1]
-      win_index_3 = single_win[2]
-    
-      position_1 = @board[win_index_1]
-      position_2 = @board[win_index_2]
-      position_3 = @board[win_index_3]
-   
-      if position_1 == position_2 && position_2 == position_3 && position_taken?(@board, win_index_1)
-        single_win
+    WIN_COMBINATIONS.each {|win_combo|
+      index_0 = win_combo[0]
+      index_1 = win_combo[1]
+      index_2 = win_combo[2]
+
+      position_1 = @board[index_0]
+      position_2 = @board[index_1]
+      position_3 = @board[index_2]
+
+      if position_1 == "X" && position_2 == "X" && position_3 == "X"
+        return win_combo
+      elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+        return win_combo
       end
-    end
-      false
+    }
+    return false
   end
 
   def full?
