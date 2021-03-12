@@ -118,7 +118,7 @@ class TicTacToe
     until over?(@board)
       turn
     end 
-    if won?(board)
+    if won?(@board)
       winner(@board) == "X" || winner(@board) == "O"
       winner(@board) == "x" || winner(@board) == "o"
       puts "Congratulations #{winner(@board)}!"
