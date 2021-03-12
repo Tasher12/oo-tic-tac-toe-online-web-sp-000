@@ -2,15 +2,4 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-puts "Welcome to Tic Tac Toe!";
-board = [" "," "," "," "," "," "," "," "," "]
-display_board
-play
-
-
-display_board
-turn
-input = gets.strip 
-index = input_to_index(input.to_i)
-display_board(board)
-move(board, index, character = "X")
+class tic_tac_toe
