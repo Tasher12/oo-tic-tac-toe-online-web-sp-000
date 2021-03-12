@@ -57,8 +57,7 @@ class TicTacToe
     input = gets.strip.to_i 
     index = input_to_index(input)
     if valid_move?(input)
-      player = current_player
-      move(index, player)
+      move(index, current_player)
       display_board
    
     end
