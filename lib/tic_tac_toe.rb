@@ -60,8 +60,7 @@ class TicTacToe
       player = current_player
       move(index, player)
       display_board
-    else
-      turn
+   
     end
   end
 
@@ -71,9 +70,9 @@ class TicTacToe
       win_index_2 = single_win[1]
       win_index_3 = single_win[2]
     
-      position_1 = board[win_index_1]
-      position_2 = board[win_index_2]
-      position_3 = board[win_index_3]
+      position_1 = @board[win_index_1]
+      position_2 = @board[win_index_2]
+      position_3 = @board[win_index_3]
    
       if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
       return single_win
