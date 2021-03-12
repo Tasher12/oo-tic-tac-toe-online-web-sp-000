@@ -60,7 +60,7 @@ class TicTacToe
       player = current_player
       move(index, player)
       display_board
-    binding.pry
+      
     end
   end
 
