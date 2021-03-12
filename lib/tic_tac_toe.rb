@@ -119,9 +119,9 @@ class TicTacToe
       turn
     end 
     if won?(board)
-      winner(board) == "X" || winner(board) == "O"
-      winner(board) == "x" || winner(board) == "o"
-      puts "Congratulations #{winner(board)}!"
+      winner(@board) == "X" || winner(@board) == "O"
+      winner(@board) == "x" || winner(@board) == "o"
+      puts "Congratulations #{winner(@board)}!"
     elsif draw?
       puts "Cat's Game!" 
     end
