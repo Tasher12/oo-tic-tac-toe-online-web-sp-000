@@ -99,8 +99,8 @@ class TicTacToe
     end
   end
 
-  def over?(board)
-    if won?(board) || full?(board) || draw?(board);
+  def over?
+    if won? || full? || draw?;
       return true
     end
   end
