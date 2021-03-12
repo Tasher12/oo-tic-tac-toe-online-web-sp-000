@@ -8,7 +8,7 @@ display_board
 play
 
 
-display_boar
+display_board
 turn
 input = gets.strip 
 index = input_to_index(input.to_i)
