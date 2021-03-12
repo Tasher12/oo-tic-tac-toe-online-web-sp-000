@@ -52,7 +52,7 @@ class TicTacToe
   end 
 
 
-  def turn
+  def turn(board)
     puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index(input)
@@ -82,7 +82,7 @@ class TicTacToe
       return false
   end
 
-  def full?
+  def full?(board)
     if @board.any? {|index| index == nil || index == " "}
       return false
     else
