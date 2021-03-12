@@ -2,8 +2,9 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-class TicTacToe 
-  play
-  
-end
+x = TicTacToe.new 
+
+play.x
+
+
   
