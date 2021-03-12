@@ -77,6 +77,7 @@ class TicTacToe
       if position_1 == position_2 && position_2 == position_3 && position_taken?(@board, win_index_1)
         single_win
       end
+    }
     end
       false
   end
